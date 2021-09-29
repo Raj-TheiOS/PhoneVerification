@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M7S-Zu-PQU">
+                                <rect key="frame" x="50" y="298" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gAQ-nd-iRc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQD-eb-rTQ">
+                                <rect key="frame" x="50" y="368" width="314" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.52156862745098043" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="51O-dC-coa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fkk-cx-dcL"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sms" translatesAutoresizingMaskIntoConstraints="NO" id="GfE-Yp-hm5">
+                                <rect key="frame" x="137" y="128" width="140" height="140"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="5bn-PW-kDa"/>
+                                    <constraint firstAttribute="height" constant="140" id="Vsh-h7-263"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdZ-MP-wz1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="er3-3N-ogI"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.0" green="0.52156862745098043" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Phone Number Verify" id="PhX-U2-X53"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NdZ-MP-wz1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="18g-Dr-V84"/>
+                            <constraint firstItem="NdZ-MP-wz1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CrG-gt-WwJ"/>
+                            <constraint firstItem="GfE-Yp-hm5" firstAttribute="top" secondItem="NdZ-MP-wz1" secondAttribute="bottom" constant="40" id="F9h-SG-GIK"/>
+                            <constraint firstItem="M7S-Zu-PQU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="JRU-uD-QE9"/>
+                            <constraint firstItem="GQD-eb-rTQ" firstAttribute="top" secondItem="M7S-Zu-PQU" secondAttribute="bottom" constant="30" id="N8o-Rf-jMM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GQD-eb-rTQ" secondAttribute="trailing" constant="50" id="PJh-AX-4X1"/>
+                            <constraint firstItem="GQD-eb-rTQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Sbo-xs-On8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M7S-Zu-PQU" secondAttribute="trailing" constant="50" id="czo-Mx-9T5"/>
+                            <constraint firstItem="M7S-Zu-PQU" firstAttribute="top" secondItem="GfE-Yp-hm5" secondAttribute="bottom" constant="30" id="pLH-uf-hfz"/>
+                            <constraint firstItem="GfE-Yp-hm5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rXj-ha-HUQ"/>
+                            <constraint firstItem="NdZ-MP-wz1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uby-zP-zvT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tfEnterNum" destination="M7S-Zu-PQU" id="DAu-XR-ZyG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4.3478260869565224" y="121.875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sms" width="128" height="128"/>
+    </resources>
+</document>

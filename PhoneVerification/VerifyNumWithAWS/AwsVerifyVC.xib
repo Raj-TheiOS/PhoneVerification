@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AwsVerifyVC">
+            <connections>
+                <outlet property="btnExit" destination="Oki-YG-Xih" id="tXT-qp-3ih"/>
+                <outlet property="indicatorView" destination="s8J-Aw-xIY" id="czY-aq-VGn"/>
+                <outlet property="lblStatus" destination="QEg-wn-dsO" id="kCG-zw-xLc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number Verification by AWS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCw-PL-F7S">
+                    <rect key="frame" x="43.5" y="138" width="327" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="GkJ-9D-IZB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFq-p3-1fn">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="awl-vF-xdF"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.0" green="0.52156862745098043" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="Phone Number Verify" id="rwv-02-X7P"/>
+                    </items>
+                </navigationBar>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="s8J-Aw-xIY">
+                    <rect key="frame" x="182" y="208" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="OVC-x0-iFc"/>
+                        <constraint firstAttribute="height" constant="50" id="g8c-Rn-b7X"/>
+                    </constraints>
+                    <color key="color" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait verifying your mobile number ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEg-wn-dsO">
+                    <rect key="frame" x="10" y="278" width="394" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="AUI-TD-fAd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wI0-a7-YBh">
+                    <rect key="frame" x="62" y="792" width="290" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.52156862745098043" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Oti-yA-F9G"/>
+                        <constraint firstAttribute="width" constant="290" id="dkr-ny-HR0"/>
+                    </constraints>
+                    <state key="normal" title="Verify Number">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="verifyNumBtnClicked:" destination="-1" eventType="touchUpInside" id="cXB-hn-MnR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oki-YG-Xih">
+                    <rect key="frame" x="10" y="329" width="394" height="40"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="KDu-T7-xEs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <state key="normal" title="EXIT">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="exitBtnClicked:" destination="-1" eventType="touchUpInside" id="vHC-Vu-cui"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="s8J-Aw-xIY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2Ox-zr-Jmh"/>
+                <constraint firstItem="Oki-YG-Xih" firstAttribute="top" secondItem="QEg-wn-dsO" secondAttribute="bottom" constant="30" id="2Vb-dW-yoM"/>
+                <constraint firstItem="fCw-PL-F7S" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CHM-os-ms8"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="QEg-wn-dsO" secondAttribute="trailing" constant="10" id="DnS-44-Byg"/>
+                <constraint firstItem="Oki-YG-Xih" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="EjT-Wt-HSV"/>
+                <constraint firstItem="fCw-PL-F7S" firstAttribute="top" secondItem="NFq-p3-1fn" secondAttribute="bottom" constant="50" id="GqJ-Of-VDE"/>
+                <constraint firstItem="s8J-Aw-xIY" firstAttribute="top" secondItem="fCw-PL-F7S" secondAttribute="bottom" constant="40" id="HuP-Ru-ZMk"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="wI0-a7-YBh" secondAttribute="bottom" constant="30" id="Ijd-95-fzF"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Oki-YG-Xih" secondAttribute="trailing" constant="10" id="TUI-LO-DCs"/>
+                <constraint firstItem="QEg-wn-dsO" firstAttribute="top" secondItem="s8J-Aw-xIY" secondAttribute="bottom" constant="20" id="UHd-d1-wLD"/>
+                <constraint firstItem="NFq-p3-1fn" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="X5p-K4-gi4"/>
+                <constraint firstItem="NFq-p3-1fn" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Xmc-LR-VvK"/>
+                <constraint firstItem="wI0-a7-YBh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="d0V-4r-qvJ"/>
+                <constraint firstItem="QEg-wn-dsO" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="kMk-c4-nDg"/>
+                <constraint firstItem="NFq-p3-1fn" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="qwV-2Q-9dQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
+        </view>
+    </objects>
+</document>
